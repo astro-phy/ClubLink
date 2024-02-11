@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ViewRequest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bg"
+                android:id="@+id/top">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/close"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    app:tint="#fff"
+                    android:id="@+id/close"/>
+
+                <TextView
+                    
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Request Title"
+                    android:fontFamily="@font/montserrat_extra_bold"
+                    android:textColor="@color/grayLight"
+                    android:textSize="10pt"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/close"
+                    android:layout_marginStart="10pt"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="10pt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                android:layout_below="@id/top"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profile_image_card"
+                app:cardCornerRadius="100dp">
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_account_circle_24"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/profile_image"
+                    />
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginTop="10dp"
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textSize="8pt"
+                android:layout_below="@id/top"
+                android:layout_toRightOf="@id/profile_image_card"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10pt"
+                android:paddingEnd="10pt"/>
+
+
+
+            <TextView
+                android:lines="4"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginTop="10dp"
+                android:id="@+id/post_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:layout_marginBottom="5dp"
+                android:textSize="7pt"
+                android:layout_below="@id/post_title"
+                android:paddingStart="10pt"
+                android:paddingEnd="10pt"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginTop="2dp"
+                android:id="@+id/post_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By: "
+                android:textSize="6pt"
+                android:layout_below="@id/post_content"
+                android:layout_marginStart="10pt"
+                />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+
+                android:id="@+id/post_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At: "
+                android:textSize="6pt"
+                android:layout_below="@id/phase"
+               android:layout_marginStart="10pt"
+                />
+
+
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/priority"
+                android:text="Priority: "
+                android:textSize="6pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10pt"
+                android:layout_below="@id/post_by"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/phase"
+                android:text="Phase: "
+                android:textSize="6pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10pt"
+                android:layout_below="@id/priority"
+                android:layout_marginEnd="10pt"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout1"
+                android:layout_below="@id/post_at"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/white"
+                    android:text="File: "
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/white"
+                    android:layout_marginStart="10pt"
+                    android:id="@+id/upload"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/upload"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:id="@+id/fileName"/>
+
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/includeApprove"
+                layout="@layout/approve_layout"
+                android:layout_below="@id/relativeLayout1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Approved or not"
+                android:id="@+id/showApproved"
+                android:layout_below="@id/includeApprove"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:textColor="@color/grayLight"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:id="@+id/text1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Approvals"
+
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/showApproved"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="12dp"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_medium"
+                android:id="@+id/approvals"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No current approvals."
+                android:visibility="invisible"
+                android:layout_below="@id/text1"
+                android:paddingStart="12dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:paddingTop="5dp"
+                tools:listitem="@layout/single_comment"
+                android:id="@+id/approvals_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

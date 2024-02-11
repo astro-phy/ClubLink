@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#201A31"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+        android:id="@+id/image1"
+        android:layout_marginTop="10pt"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo2"/>
+
+    <TextView
+        android:layout_below="@id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:id="@+id/tv1"/>
+
+    <TextView
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a shiny new account!"
+        android:textColor="#6F6F6F"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:id="@+id/tv2"/>
+
+
+
+
+    <EditText
+        style="@style/fontStyle1"
+        android:layout_below="@id/tv2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:padding="7pt"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="#C8C8C8"
+        android:textColor="@color/white"
+        android:layout_marginTop="5pt"
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextName"
+        style="@style/fontStyle1"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:padding="7pt"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="#C8C8C8"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        style="@style/fontStyle1"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/baseline_vpn_key_24"
+        android:padding="7pt"
+        android:background="@drawable/edit_text_bg"
+        android:textColorHint="#C8C8C8"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextEmail"
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+
+
+
+
+
+    <Button
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="10pt"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10pt"
+        android:backgroundTint="@color/primaryLight"
+        android:text="Sign Up" />
+
+
+    <TextView
+        android:layout_marginStart="7pt"
+        android:layout_below="@id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your role"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:id="@+id/tv3"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10pt"
+                    android:layout_marginEnd="10pt"
+                    android:layout_below="@id/tv3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear1">
+
+
+                    <TextView
+                        android:textSize="5pt"
+                        android:id="@+id/member"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Club Member"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+                    <TextView
+                        android:textSize="5pt"
+                        android:id="@+id/clubfa"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Club FA"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+                    <TextView
+                        android:textSize="5pt"
+                        android:id="@+id/societyfa"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Society FA"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10pt"
+                    android:layout_marginEnd="10pt"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/linear1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2">
+
+
+
+                    <TextView
+                        android:textSize="5pt"
+                        android:id="@+id/chairsap"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ChairSAP"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+                    <TextView
+                        android:textSize="5pt"
+                        android:id="@+id/dean"
+                        android:textAlignment="center"
+                        android:padding="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dean"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:background="@drawable/edit_text_bg"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
