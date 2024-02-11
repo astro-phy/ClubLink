@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/bg"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:paddingBottom="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#FFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/cardView"
+                app:cardCornerRadius="100dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_account_circle_24"
+                    android:id="@+id/profile_image_comment"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:id="@+id/item_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dean/Chair/FA"
+                android:layout_toRightOf="@id/cardView"
+                android:layout_marginStart="10dp"
+                android:textSize="5pt"
+                android:textColor="#FFF"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingEnd="10dp"
+                android:textAlignment="textEnd"
+                android:id="@+id/date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Time"
+                android:layout_toRightOf="@id/item_details"
+                android:layout_marginStart="10dp"
+                android:textSize="5pt"
+                android:textColor="#FFF"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_below="@id/item_details"
+                android:id="@+id/item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_toRightOf="@id/cardView"
+                android:layout_marginStart="10dp"
+                android:textSize="6pt"
+                android:textColor="#FFF"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:layout_below="@id/item_text"
+                android:id="@+id/approved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Approved: "
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_toRightOf="@id/cardView"
+                android:layout_marginStart="10dp"
+                android:textSize="6pt"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
